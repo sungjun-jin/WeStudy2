@@ -1,0 +1,246 @@
+body {
+
+    display: flex;
+    flex-direction: column;
+    /* 배경 이미지를 정중앙으로 이동 */
+    align-items: center;
+    font-family: "Do Hyeon";
+    
+}
+
+h1 {
+
+    font-family: "Fredoka One";
+}
+
+.background {
+
+    background-image: url("./background-img.png");
+    background-size: 140%;
+    width: 1400px;
+    height: 920px;
+    border-radius: 10px;
+
+}
+
+.opponent-container {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    margin-top: 300px;
+
+
+}
+
+.player-container {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+
+}
+
+.opponent-status,
+.player-status {
+
+    width: 400px;
+    height: 150px;
+
+}
+
+.opponent-pokemon {
+
+    width: 300px;
+    height: 100%;
+    background-image: url("./opponent-pokemon.png");
+    background-size: 95%;
+    margin-left: 45%;
+    margin-top: 30px;
+
+
+}
+
+.player-pokemon {
+
+    width: 300px;
+    height: 140%;
+    background-image: url("./player-pokemon.png");
+    background-size: 99%;
+    margin-left: 5%;
+    margin-top: -30px;
+}
+
+
+.opponent-status-container {
+
+    width: 100%;
+    height: 90%;
+    border-radius: 5%;
+    background-color: black;
+    opacity: 0.65;
+    margin-left: 160%;
+    margin-top: 10px;
+}
+
+.player-status-container {
+
+    width: 100%;
+    height: 90%;
+    border-radius: 5%;
+    background-color: black;
+    opacity: 0.65;
+    margin-left: 5%;
+    margin-top: -50px;
+}
+
+.status-name {
+
+    font-size: 25px;
+    font-weight: lighter;
+    color: white;
+    padding: 10px;
+    padding-left: 40px;
+
+
+}
+
+.health-bar-container {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: beige;
+    border-radius: 3%;
+}
+
+.hp {
+
+    font-size: 15px;
+    color: black;
+    margin-left: 10px;
+    background-color: gray;
+    width: 10%;
+    height: 20px;
+    padding: 3px;
+}
+
+.health-bar {
+
+    margin-top: 15px;
+    height: 25px;
+    margin-left: 10px;
+    width: 75%;
+    background-color: green;
+
+}
+.info {
+
+    width: 550px;
+    height: 130px;
+    margin-left: 27%;
+    margin-top: -120px;
+    background-color: blue;
+    opacity: 0.3;
+    border-radius: 3%;
+    padding: 20px;
+    color: white;
+}
+
+.textBox {
+
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    margin-left: 20%;
+}
+
+#next-button {
+
+    margin-left: 83%;
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10%;
+    font-size: 30px;
+    background-color: green;
+}
+
+.menu {
+
+    width: 400px;
+    height: 200px;
+    margin-left: 70%;
+    margin-top: -200px;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 3%;
+    align-items: center;
+
+}
+
+.menu table {
+
+    width: 100%;
+    height: auto;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.menu td {
+
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: lighter;
+
+}
+
+.menu td:hover {
+
+    color: blue;
+}
+
+/* @keyframes 규칙을 이용해서 두개 이상의 중간 상태를 기술합니다. 각 중간 상태는 특정 시점에 엘리먼트가 어떻게 보일지 나타냅니다. */
+
+@keyframes shake { 
+
+    10%, 90% {
+      transform: translate3d(-2px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(3px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(5px, 0, 0);
+    }
+  }
+  
+  .apply-shake {
+      
+      animation: shake 0.82s;
+  }
+
+  .score {
+
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10%;    
+    margin-bottom : 8px;
+    color:black;
+  }
+
